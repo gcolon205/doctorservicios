@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doctor Servicios – Encuentra proveedores de servicios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Merriweather:ital@0;1&family=Ysabeau+SC&family=Gruppo&display=swap" rel="stylesheet">
+  <script src="./JS/javascript.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="avatare" style="font-size: 15px;">
+      <img src="./recursos/avatar.webp" alt="Avatar" class="avatarr">
+      <br>
+      <p style="color: white;">Nombre</p>
+      <p style="color: white;">@username</p>
+    </div>
+    <br>
+    <a href="./infopersonal.html">Información personal</a>
+    <a href="./miperfil.html">Mi perfil</a>
+    <a href="./contactanos.html">Contáctanos</a>
+    <a href="./login.html">Cerrar sesión</a>
+  </div>
+  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <div class="logoname">
+    <img src="./recursos/logo.png" alt="Logo Doctor Servicios" style="width: 92px" class="logo">
+    <h1 class="titlee">Doctor Servicios</h1>
+    <a href="./notificaciones.html">
+      <button type="button" class="btn btn-outline-dark">Notificaciones</button>
+    </a>
+  </div>
+  <nav class="navv">
+    <a href="./index.html"><button type="button" class="btn btn-outline-dark" style="background-color: rgb(181, 177, 177);" id="practicar">Inicio</button></a>
+    <a href="./misfavoritos.html"><button type="button" class="btn btn-outline-dark">Mis favoritos</button></a>
+  </nav>
+</header>
+<main class="container my-5">
+  <!-- Hero section -->
+  <section class="text-center py-5">
+    <img src="./recursos/hero.png" alt="Doctor Servicios hero" class="img-fluid mb-4">
+    <h2>Encuentra proveedores de servicios confiables cerca de ti</h2>
+    <p class="lead">Desde mantenimiento del hogar hasta servicios de belleza y más, conectamos usuarios con profesionales verificados en Puerto Rico.</p>
+    <a href="./lista.html" class="btn btn-primary btn-lg">Explorar servicios</a>
+  </section>
+  <!-- Categories grid -->
+  <section class="provideroption">
+    <h2>Servicios Populares</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a class="cuadrito d-block p-3" href="./lista.html">Belleza & Barbería</a>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a class="cuadrito d-block p-3" href="./lista.html">Mecánica & Lavado de autos</a>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a class="cuadrito d-block p-3" href="./lista.html">Cuidado de Jardines</a>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a class="cuadrito d-block p-3" href="./lista.html">Limpieza del hogar</a>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a class="cuadrito d-block p-3" href="./lista.html">Servicios de Tecnología</a>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <a class="cuadrito d-block p-3" href="./lista.html">Transporte & Mudanzas</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="text-center py-3 border-top">
+  <div>
+    <a href="./index.html" style="color: black;">Inicio</a> |
+    <a href="./contactanos.html" style="color: black;">Contáctanos</a>
+  </div>
+  <div class="mt-2">
+    <p>&copy; 2025 DoctorServicios.com</p>
+    <a href="./index.html" style="color: black;">Términos y condiciones</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
