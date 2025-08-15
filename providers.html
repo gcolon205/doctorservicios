@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proveedores - Doctor Servicios</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Directorio de proveedores de servicios en Puerto Rico con búsqueda en vivo y filtros por categoría y municipio.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body onload="initProviderListPage()">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="recursos/logo.png" alt="Doctor Servicios" style="height:40px; margin-right:10px;">
+      <span>Doctor Servicios</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="providers.html">Proveedores</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="https://wa.me/7875555555?text=Hola,%20me%20gustaría%20registrarme%20en%20Doctor%20Servicios" target="_blank">Agregar tu servicio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container my-5">
+  <h1 class="mb-4 text-center">Directorio de Proveedores</h1>
+  <div class="search-container text-center">
+    <input type="text" id="searchInput" class="form-control search-bar d-inline-block" placeholder="Buscar por nombre, categoría, municipio o palabras clave">
+  </div>
+  <div class="filter-bar my-3 justify-content-center">
+    <select id="categoryFilter" class="form-select" style="max-width:200px;">
+      <option value="">Todas las categorías</option>
+    </select>
+    <select id="municipioFilter" class="form-select" style="max-width:200px;">
+      <option value="">Todos los municipios</option>
+    </select>
+  </div>
+  <div id="providersList" class="row">
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 DoctorServicios.com. Todos los derechos reservados.</p>
+    <p><a href="#">Términos y condiciones</a></p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>
