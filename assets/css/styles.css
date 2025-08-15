@@ -1,0 +1,59 @@
+/* Custom styles for Doctor Servicios */
+body {
+  padding-top: 70px;
+}
+.hero {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.hero h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.category-card {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.category-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.provider-card {
+  border: 1px solid #e9ecef;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.provider-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.rating {
+  color: #ffc107;
+}
+.footer {
+  background: #f8f9fa;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+.search-bar {
+  max-width: 500px;
+}
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
