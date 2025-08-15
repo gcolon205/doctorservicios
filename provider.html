@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proveedor - Doctor Servicios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Detalle del proveedor de servicios en Puerto Rico.">
+  <!-- CSS frameworks -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body onload="initProviderDetailPage()">
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="recursos/logo.png" alt="Doctor Servicios" style="height:40px; margin-right:10px;">
+        <span>Doctor Servicios</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="providers.html">Proveedores</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="https://wa.me/7875555555?text=Hola,%20me%20gustar%C3%ADa%20registrarme%20en%20Doctor%20Servicios" target="_blank">Agregar tu servicio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Provider detail container -->
+  <div class="container my-5">
+    <div id="providerDetail" data-aos="fade-up">
+      <!-- La información del proveedor se cargará dinámicamente mediante app.js -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 DoctorServicios.com. Todos los derechos reservados.</p>
+      <p><a href="#">Términos y condiciones</a></p>
+    </div>
+  </footer>
+
+  <!-- JS frameworks -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
